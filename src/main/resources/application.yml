@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/library
+    username: admin
+    password: admin
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+
+jwt:
+  secret: mysecretkeymysecretkeymysecretkey
+  expiration: 86400000
